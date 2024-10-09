@@ -1,0 +1,78 @@
+body{
+    background-color: aqua;
+}
+
+/* this is a comment */
+header{
+    background-color: rgb(38, 93, 74);
+    color: whitesmoke;
+    padding:1rem 2rem ;
+    /* 1rem=16px */
+    /* top and bottom,left and right */
+    margin: 1rem ;
+
+}
+
+h1,h2,h3{
+    text-decoration: underline;
+}
+div p{
+    font-size: 0.8rem;
+    color: blue;
+}
+
+p{
+    font-size: 1.2 rem;
+    color: blueviolet;
+    margin: 1rem o;
+}
+
+
+/* to target a class use the dot (.) */
+.notes{
+    border: 2px solid black;
+}
+.highlight{
+    background-color: yellow;
+    border:2px solid red;
+
+}
+#goals{
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+li:nth-child(2n+1){
+    background-color: darkgray;
+}
+
+a{
+    display: block;
+    color: black;
+}
+
+a[href="https://Algonquincollege.com"]{
+    color: green;
+}
+a:link{
+    color:cadetblue;
+}
+a:visited{
+    color:coral;
+
+}
+span{
+    color:blue;
+}
+span{
+    color:inherit;
+    /* forces the span to inherit the color from the parent */
+}
+span{
+    color:initial;
+    /* takes you back to the browser default */
+}
+span{
+    color:unset;
+    /*  */
+}

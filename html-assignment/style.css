@@ -1,0 +1,30 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+header,footer{
+    background-color: blanchedalmond;
+}
+.site-title{
+    color: chocolate;
+}
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+.hobbies{
+    list-style-type: square;
+}
+.hobbies li:nth-child(2n+1){
+    background-color: darkgray;
+}
+nav ul{
+    list-style-type: none;
+}
+nav a{
+    text-decoration: none;
+    border: 1px solid #BEA8A7;
+    background-color: #F4DBD8;
+}
+nav a:hover, nav a:focus{
+    background-color: #C09891;
+}

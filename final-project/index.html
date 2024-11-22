@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>final-project</title>
+</head>
+<body>
+    <header>
+        <!-- The same image for mobile and desktop, but different style. -->
+        <div>
+            <img src="./images/logo.png" alt="logo">
+        </div>       
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <form action="#">
+            <input type="text">
+            <!-- There is a frame outside of the search button -->
+            <div>
+                <span class="material-symbols-outlined">search</span>
+            </div>
+        </form>
+    </header>
+
+    <main>
+        <section id="section1">
+            <img src="./images/main-banner.jpg" alt="main-banner">
+            <!-- A div is used to do the transparent frame. -->
+            <div>
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nam facilis. Obcaecati cum, reprehenderit laboriosam explicabo sequi tenetur repellendus illo?</p>
+                <div>
+                    <a href="#">Connect with us <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <!-- Background color could be added to section2. -->
+            <img src="./images/about-us.jpg" alt="About us">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolores porro at eum maxime cum fuga iusto unde saepe error ratione voluptas numquam, beatae libero?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolores laboriosam illo impedit, et perspiciatis labore incidunt culpa placeat numquam.</p>
+        </section>
+        <section id="section3">       
+            <h2>Our Services</h2>
+            <!-- Each div below can share the same css style. -->
+            <div>
+                <img src="./images/digital.jpg" alt="digital">
+                <h3>Digital Transformation</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                <div>
+                    <a href="#">Digital Plans <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>
+            <div>
+                <img src="./images/marketing.jpg" alt="marketing">
+                <h3>marketing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                <div>
+                    <a href="#">Marketing Plans <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>
+            <div>
+                <img src="./images/video.jpg" alt="video">
+                <h3>Video Production</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                <div>
+                    <a href="#">Video Plans <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>
+            <div>
+                <img src="./images/web.jpg" alt="web">
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                <div>
+                    <a href="#">Web Plans <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>
+            <div>
+                <img src="./images/print.jpg" alt="print">
+                <h3>Print</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                <div>
+                    <a href="#">Print Plans <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>
+        </section>
+        <section id="section4">
+            <!-- Set img as the background. -->
+            <img src="./images/vision.jpg" alt="vision">
+            <div>
+                <h2>Our Vision</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nihil eaque dolores exercitationem incidunt in?</p>
+                <div>
+                    <a href="#">Learn More <span class="material-symbols-outlined">arrow_right</span></a>
+                </div>
+            </div>            
+        </section>
+        <section id="section5">
+            <h2>Our Team</h2>
+            <!-- Each div below can share the same css code. -->
+            <div>
+                <img src="./images/john.jpg" alt="john">
+                <div>
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <hr>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste consequatur maiores et quaerat ut id totam accusantium quis tempore.</P>
+                </div>
+            </div>
+            <div>
+                <!-- We should check the two editions to make sure the structure is right. -->
+                <img src="./images/bob.jpg" alt="bob">
+                <div>
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <hr>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloribus cumque quas eius maiores architecto quo expedita dolorem aut repellat.</P>
+                </div>               
+            </div>
+        </section>
+        <section id="section6">
+            <!-- We could use order to make different sytle for mobile and desktop. -->
+            <h2>Contact Us</h2>
+            <div>
+                <div>
+                    <h3>Send us a message</h3>
+                    <form action="#">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Hours of operation</h3>
+                    <table>
+                        <tr>
+                            <th>Days</th>
+                            <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday-Friday</td>
+                            <td>9AM-6PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday-Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d42415.58991528024!2d-75.75426735935724!3d45.38640088990517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salgonquin%20college!5e0!3m2!1szh-CN!2sca!4v1732288899313!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- There is a anchor tag. -->
+        <div>
+            <p>©Copyright Three Star Mdeia, 2020</p>
+            <p>All images are taken from <a href="#">Unsplash</a></p>
+        </div>
+    </footer>
+</body>
+</html>

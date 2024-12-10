@@ -6,13 +6,17 @@
     <!-- Import two css files. -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fontdiner+Swanky&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>final-project</title>
 </head>
+
 <body> 
    <!-- Use header to set black back ground -->
-    <header>
+    <header id="home" class="bg bg-header">
         <!-- Use head-container to set the content center -->
-        <div class="head-container">
+        <div class="container container-header">
             <!-- use div to control the image size. -->
             <div class="head-img"> 
                 <img src="./images/logo.png" alt="logo">
@@ -20,17 +24,18 @@
             <nav>
                 <ul>
                     <!-- Home button has a different style. -->
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <form action="#">
-                <input type="text" placeholder="Search">
+                <label for="search">search</label>
+                <input type="text" id="search" placeholder="Search">
                 <!-- There is a frame outside of the search button -->
-                <button>
+                <button type="submit" aria-label="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
@@ -38,33 +43,33 @@
     </header>
 
     <main>
-        <section id="section1">
+        <section id="welcome" class="bg bg-welcome">
             <!-- change to use css to set the background image. -->
             <!-- <img src="./images/main-banner.jpg" alt="main-banner"> -->
             <!-- A div is used to do the transparent frame. -->
-            <div class="s1-content">                             
+            <div class="container container-welcome">                             
                 <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nam facilis. Obcaecati cum, reprehenderit laboriosam explicabo sequi tenetur repellendus illo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nam facilis. Obcaecati cum, reprehenderit laboriosam explicabo sequi tenetur repellendus illo reprehenderit laboriosam explicabo sequi tenetur repellendus illo?</p>
                 <a href="#">Connect with us <i class="fa-solid fa-caret-right"></i></a>     
             </div>
         </section>
 
 
-        <section id="section2">
-            <!-- use section to set background color, and use content div to align-items center 这里加了个div-->
-            <div class="s2-content">
+        <section id="about" class="bg bg-about">
+            <!-- use section to set background color, and use content div to align items -->
+            <div class="container container-about">
                 <img src="./images/about-us.jpg" alt="About us">
                 <div> 
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolores porro at eum maxime cum fuga iusto unde saepe error ratione voluptas numquam, beatae libero?</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolores laboriosam illo impedit, et perspiciatis labore incidunt culpa placeat numquam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dolores porro at eum maxime cum fuga iusto unde saepe error ratione voluptas numquam, beatae libero?dolores porro at eum maxime cum fuga iusto unde saepe error ratione voluptas numquam, beatae libero?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolores laboriosam illo impedit, et perspiciatis labore incidunt culpa placeat numquam. Nam dolores laboriosam illo impedit, et perspiciatis labore incidunt culpa placeat numquam.</p>
                 </div>
             </div>
         </section>
 
 
-        <section id="section3">
-            <div class="s3-content">
+        <section id="services" class="bg bg-services">
+            <div class="container container-services">
                 <h2>Our Services</h2>
                 <div class="services"> 
                     <!-- Each div below can share the some css style. -->
@@ -73,15 +78,15 @@
                         <img src="./images/digital.jpg" alt="digital">
                         <div>
                             <h3>Digital Transformation</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
                         </div>
                     </div>
                     <div class="window">
                         <img src="./images/marketing.jpg" alt="marketing">
                         <div>
-                            <h3>marketing</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
                         </div>
                     </div>
@@ -89,7 +94,7 @@
                         <img src="./images/video.jpg" alt="video">
                         <div>
                             <h3>Video Production</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#">Video Plans <i class="fa-solid fa-caret-right"></i></a>
                         </div>
                     </div>
@@ -97,7 +102,7 @@
                         <img src="./images/web.jpg" alt="web">
                         <div>
                             <h3>Web Development</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#">Web Plans <i class="fa-solid fa-caret-right"></i></a>
                         </div>
                     </div>
@@ -105,7 +110,7 @@
                         <img src="./images/print.jpg" alt="print">
                         <div>
                             <h3>Print</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat fugit modi sed quis necessitatibus voluptate doloribus eligendi eius odit quia?Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                             <a href="#">Print Plans <i class="fa-solid fa-caret-right"></i></a>
                         </div>
                     </div>
@@ -115,50 +120,52 @@
         </section>
 
 
-        <section id="section4">
+        <section id="vision" class="bg bg-vision">
             <!-- Use position to set backgroud image. -->
-            <img src="./images/vision.jpg" alt="vision">
-            <div class="s4-content">
+            <!-- <img src="./images/vision.jpg" alt="vision"> -->
+            <div class="container container-vision">
                 <h2>Our Vision</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nihil eaque dolores exercitationem incidunt in?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nihil eaque dolores exercitationem incidunt in?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nihil eaque dolores exercitationem incidunt in?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente nihil eaque dolores exercitationem incidunt in?</p>
                 <a href="#">Learn More <i class="fa-solid fa-caret-right"></i></a>
             </div>            
         </section>
 
 
-        <section id="section5">
-            <div class="s5-content"> 
+        <section id="team" class="bg bg-team">
+            <div class="container container-team"> 
                 <h2>Our Team</h2>
-                <div class="team-member">
-                    <img src="./images/john.jpg" alt="john">
-                    <div>
-                        <h3>John Doe</h3>
-                        <h4>CEO and Co-owner</h4>
-                        <hr>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste consequatur maiores et quaerat ut id totam accusantium quis tempore.</P>
+                <div class="team-table">
+                    <div class="team-member">
+                        <img src="./images/john.jpg" alt="john">
+                        <div>
+                            <h3>John Doe</h3>
+                            <h4>CEO and Co-owner</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque iste consequatur maiores et quaerat ut id totam accusantium quis tempore.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="team-member">
-                    <!-- Use flex direction to reverse. -->
-                    <img src="./images/bob.jpg" alt="bob">
-                    <div>
-                        <h3>Bob Rite</h3>
-                        <h4>CFO and Co-owner</h4>
-                        <hr>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloribus cumque quas eius maiores architecto quo expedita dolorem aut repellat.</P>
-                    </div>               
+                    <div class="team-member">
+                        <!-- Use flex direction to reverse. -->
+                        <img src="./images/bob.jpg" alt="bob">
+                        <div>
+                            <h3>Bob Rite</h3>
+                            <h4>CFO and Co-owner</h4>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias doloribus cumque quas eius maiores architecto quo expedita dolorem aut repellat.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>               
+                    </div>
                 </div>
             </div>
         </section>
 
 
 
-        <section id="section6">
-            <div class="s6-content">
+        <section id="contact" class="bg bg-contact">
+            <div class="container container-contact">
                 <!-- We could use order to make different sytle for mobile and desktop. -->
                 <h2>Contact Us</h2>
                 <div class="contact-card">
-                    <div>
+                    <div class="contact-message">
                         <h3>Send us a message</h3>
                         <form action="#">
                             <label for="fullname">Full Name</label>
@@ -170,7 +177,7 @@
                             <button>Send</button>
                         </form>
                     </div>
-                    <div>
+                    <div class="contact-hours">
                         <h3>Hours of operation</h3>
                         <table>
                             <tr>
@@ -187,7 +194,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div>
+                    <div class="contact-locaction">
                         <h3>Location</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d42415.58991528024!2d-75.75426735935724!3d45.38640088990517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salgonquin%20college!5e0!3m2!1szh-CN!2sca!4v1732288899313!5m2!1szh-CN!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
@@ -198,8 +205,8 @@
 
 
 
-    <footer>
-        <div>
+    <footer class="bg bg-footer">
+        <div class="container container-footer">
             <p>© Copyright Three Star Mdeia, 2020</p>
             <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
         </div>
